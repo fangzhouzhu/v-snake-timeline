@@ -1,0 +1,28 @@
+{
+  "name": "v-snake-timeline",
+  "version": "1.0.0",
+  "description": "vue2 蛇形时间轴",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "sass": "^1.63.3",
+    "sass-loader": "^10.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fangzhouzhu/v-snake-timeline.git"
+  },
+  "keywords": [
+    "vue",
+    "snake",
+    "timeline"
+  ],
+  "author": "fangzhouzhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fangzhouzhu/v-snake-timeline/issues"
+  },
+  "homepage": "https://github.com/fangzhouzhu/v-snake-timeline#readme"
+}

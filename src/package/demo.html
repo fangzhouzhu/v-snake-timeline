@@ -1,0 +1,73 @@
+<meta charset="utf-8" />
+<title>v-snake-timeline demo</title>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.js"></script>
+
+<script src="./v-snake-timeline.umd.js"></script>
+
+<link rel="stylesheet" href="./v-snake-timeline.css" />
+<body>
+  <div id="app">
+    <v-snake-timeline
+      :data="timeLineData"
+      :columns="3"
+      :line-width="2"
+      :row-height="100"
+      line-style="dashed"
+    >
+      <template #line-top="{ item }">
+        <span> {{ (item.time) }} </span>
+      </template>
+      <template #line-bottom="{ item }">
+        <li>name: {{ item.name }}</li>
+        <li>type: {{ item.type }}</li>
+      </template>
+    </v-snake-timeline>
+  </div>
+</body>
+
+<script>
+  Vue.component("v-snake-timeline", window["v-snake-timeline"].VSnakeTimeLine);
+  new Vue({
+    data() {
+      return {
+        timeLineData: [
+          {
+            time: "2023-06-06 11:11:11",
+            name: "A1",
+            type: "Type1",
+          },
+          {
+            time: "2023-06-07 11:11:11",
+            name: "A2",
+            type: "Type2",
+          },
+          {
+            time: "2023-06-08 11:11:11",
+            name: "A3",
+            type: "Type3",
+          },
+          {
+            time: "2023-06-09 11:11:11",
+            name: "A4",
+            type: "Type4",
+          },
+          {
+            time: "2023-06-10 11:11:11",
+            name: "A5",
+            type: "Type5",
+          },
+          {
+            time: "2023-06-11 11:11:11",
+            name: "A6",
+            type: "Type6",
+          },
+          {
+            time: "2023-06-12 11:11:11",
+            name: "A7",
+            type: "Type7",
+          },
+        ],
+      };
+    },
+  }).$mount("#app");
+</script>
