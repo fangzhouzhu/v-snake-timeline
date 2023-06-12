@@ -32,7 +32,7 @@ Vue.use(VSnakeTimeline);
 <h3>Global Registration</h3>
 
 ```javascript
-import VSnakeTimeline from "v-snake-timeline";
+import { VSnakeTimeline } from "v-snake-timeline";
 
 import "v-snake-timeline/v-snake-timeline.css";
 

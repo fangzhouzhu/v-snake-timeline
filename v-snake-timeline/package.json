@@ -1,8 +1,8 @@
 {
   "name": "v-snake-timeline",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "vue2 蛇形时间轴",
-  "main": "index.js",
+  "main": "v-snake-timeline.common.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
